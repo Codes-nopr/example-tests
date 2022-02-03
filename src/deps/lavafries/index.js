@@ -1,0 +1,23 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.version = exports.loadTypes = exports.Utils = exports.FriesRoutePlanner = exports.FriesQueue = exports.FriesPlayer = exports.FriesNode = exports.FriesLava = void 0;
+const path_1 = require("path");
+const fs_1 = require("fs");
+var FriesLava_1 = require("./structure/FriesLava");
+Object.defineProperty(exports, "FriesLava", { enumerable: true, get: function () { return __importDefault(FriesLava_1).default; } });
+var FriesNode_1 = require("./structure/FriesNode");
+Object.defineProperty(exports, "FriesNode", { enumerable: true, get: function () { return __importDefault(FriesNode_1).default; } });
+var FriesPlayer_1 = require("./structure/FriesPlayer");
+Object.defineProperty(exports, "FriesPlayer", { enumerable: true, get: function () { return __importDefault(FriesPlayer_1).default; } });
+var FriesQueue_1 = require("./structure/FriesQueue");
+Object.defineProperty(exports, "FriesQueue", { enumerable: true, get: function () { return __importDefault(FriesQueue_1).default; } });
+var FriesRoutePlanner_1 = require("./structure/FriesRoutePlanner");
+Object.defineProperty(exports, "FriesRoutePlanner", { enumerable: true, get: function () { return __importDefault(FriesRoutePlanner_1).default; } });
+var Utils_1 = require("./utils/Utils");
+Object.defineProperty(exports, "Utils", { enumerable: true, get: function () { return __importDefault(Utils_1).default; } });
+var Constants_1 = require("./utils/Constants");
+Object.defineProperty(exports, "loadTypes", { enumerable: true, get: function () { return __importDefault(Constants_1).default; } });
+exports.version = JSON.parse((0, fs_1.readFileSync)((0, path_1.join)(__dirname, "..", "package.json"), "utf-8")).version;
