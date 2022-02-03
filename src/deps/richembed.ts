@@ -1,5 +1,5 @@
-const embedUtil = require("./embedUtil");
 import type { toJSON } from "./interfaces";
+import EmbedUtil from "./embedutil";
 
 export default class RichEmbed {
     public type: any;
