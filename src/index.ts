@@ -13,8 +13,8 @@ client.commands = new Map<any, any>();
 
 const nodes: any[] = [
     {
-        host: "159.89.191.7",
-        port: 2054,
+        host: "localhost",
+        port: 2333,
         password: "youshallnotpass",
         retries: 5,
         shards: 1,
